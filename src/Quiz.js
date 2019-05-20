@@ -1,8 +1,8 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
+
+let quizData = require('./quiz_data.json')
 
 class Quiz extends Component {
-
-    quizData = require('./quiz_data.json');
 
     constructor(props) {
         super(props);
@@ -12,7 +12,6 @@ class Quiz extends Component {
         return (
             <div>
                 <div className="QuizQuestion">
-                    {/*{quizData}*/}
                     {this.quizData['quiz_questions'][0].instruction_text}
                 </div>
             </div>
